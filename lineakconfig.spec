@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/lineak/%{name}-%{version}.tar.gz
+# Source0-md5:	210a6e6eec924c985955f0aa353bbb5e
 Patch0:		%{name}-pl.po.patch
 URL:		http://lineak.sourceforge.net/
 BuildRequires:	XFree86-devel
