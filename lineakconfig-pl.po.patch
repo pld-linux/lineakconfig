@@ -1,0 +1,181 @@
+--- lineakconfig-0.3.2/configure.in.orig	2002-06-11 13:11:59.000000000 +0200
++++ lineakconfig-0.3.2/configure.in	2003-04-25 01:06:47.000000000 +0200
+@@ -45,7 +45,7 @@
+ 
+ 
+ dnl Languages which your application supports
+-ALL_LINGUAS=""
++ALL_LINGUAS="pl"
+ AM_GNU_GETTEXT
+ 
+ dnl Set PACKAGE_LOCALE_DIR in config.h.
+--- lineakconfig-0.3.2/po/pl.po.orig	1970-01-01 01:00:00.000000000 +0100
++++ lineakconfig-0.3.2/po/pl.po	2003-04-25 01:11:48.000000000 +0200
+@@ -0,0 +1,167 @@
++# Polish translation for lineakconfig.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the lineakconfig package.
++# Jakub Bogusz <qboosh@pld.org.pl>, 2003.
++#
++msgid ""
++msgstr ""
++"Project-Id-Version: lineakconfig 0.3.2\n"
++"POT-Creation-Date: 2003-04-25 01:05+0200\n"
++"PO-Revision-Date: 2003-04-25 01:07+0200\n"
++"Last-Translator: Jakub Bogusz <qboosh@pld.org.pl>\n"
++"Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=iso-8859-2\n"
++"Content-Transfer-Encoding: 8bit\n"
++
++#: src/interface.c:104
++msgid "LinEAK Configuration"
++msgstr "Konfiguracja LinEAK"
++
++#. global settings
++#: src/interface.c:128
++msgid "Global settings"
++msgstr "Ustawienia globalne"
++
++#. kbtypes: label
++#: src/interface.c:146
++msgid "Keyboard brand:"
++msgstr "Producent klawiatury:"
++
++#: src/interface.c:155
++msgid "Keyboard model:"
++msgstr "Model klawiatury"
++
++#. cdrom: label
++#: src/interface.c:189 src/interface.c:745
++msgid "CD-ROM device:"
++msgstr "¦cie¿ka CD-ROM:"
++
++#: src/interface.c:198 src/interface.c:754
++msgid "Mixer device:"
++msgstr "¦cie¿ka miksera:"
++
++#. keyboard settings
++#: src/interface.c:237
++msgid "Keyboard settings"
++msgstr "Ustawienia klawiatury"
++
++#. available keys
++#: src/interface.c:254
++msgid "Available keys:"
++msgstr "Dostêpne klawisze:"
++
++#. predefined command sets
++#. label16 = gtk_label_new (_("Predefined command set:"));
++#. gtk_widget_ref (label16);
++#. gtk_object_set_data_full (GTK_OBJECT (MainWindow), "label16", label16,
++#. (GtkDestroyNotify) gtk_widget_unref);
++#. gtk_widget_show (label16);
++#. gtk_fixed_put (GTK_FIXED (fixed3), label16, 192, 8);
++#. gtk_widget_set_uposition (label16, 192, 8);
++#. gtk_widget_set_usize (label16, 144, 24);
++#.
++#. presets = gtk_option_menu_new ();
++#. gtk_widget_ref (presets);
++#. gtk_object_set_data_full (GTK_OBJECT (MainWindow), "presets", presets,
++#. (GtkDestroyNotify) gtk_widget_unref);
++#. gtk_widget_show (presets);
++#. gtk_fixed_put (GTK_FIXED (fixed3), presets, 192, 32);
++#. gtk_widget_set_uposition (presets, 192, 32);
++#. gtk_widget_set_usize (presets, 216, 24);
++#. presets_menu = gtk_menu_new ();
++#. gtk_option_menu_set_menu (GTK_OPTION_MENU (presets), presets_menu);
++#.
++#. setsave_button = gtk_button_new_with_label (_("Save set as..."));
++#. gtk_widget_ref (setsave_button);
++#. gtk_object_set_data_full (GTK_OBJECT (MainWindow), "setsave_button", setsave_button,
++#. (GtkDestroyNotify) gtk_widget_unref);
++#. gtk_widget_show (setsave_button);
++#. gtk_fixed_put (GTK_FIXED (fixed3), setsave_button, 192, 64);
++#. gtk_widget_set_uposition (setsave_button, 192, 64);
++#. gtk_widget_set_usize (setsave_button, 96, 24);
++#.
++#. setdel_button = gtk_button_new_with_label (_("Delete this set"));
++#. gtk_widget_ref (setdel_button);
++#. gtk_object_set_data_full (GTK_OBJECT (MainWindow), "setdel_button", setdel_button,
++#. (GtkDestroyNotify) gtk_widget_unref);
++#. gtk_widget_show (setdel_button);
++#. gtk_fixed_put (GTK_FIXED (fixed3), setdel_button, 312, 64);
++#. gtk_widget_set_uposition (setdel_button, 312, 64);
++#. gtk_widget_set_usize (setdel_button, 96, 24);
++#. run command
++#: src/interface.c:327
++msgid "Key runs command:"
++msgstr "Klawisz uruchamia polecenie:"
++
++#. special action
++#: src/interface.c:347
++msgid "Key performs special action:"
++msgstr "Klawisz wykonuje akcjê specjaln±:"
++
++#: src/interface.c:403 src/interface.c:469
++msgid "    "
++msgstr "    "
++
++#: src/interface.c:417
++msgid "OK"
++msgstr "OK"
++
++#: src/interface.c:424
++msgid "     "
++msgstr "     "
++
++#: src/interface.c:448 src/interface.c:493
++msgid "  "
++msgstr "  "
++
++#: src/interface.c:462
++msgid "Apply"
++msgstr "Zastosuj"
++
++#: src/interface.c:507 src/interface.c:662
++msgid "Cancel"
++msgstr "Anuluj"
++
++#: src/interface.c:514
++msgid "   "
++msgstr "   "
++
++#: src/interface.c:642
++msgid "New LinEAK Keyboard Configuration"
++msgstr "Nowy konfigurator klawiatury LinEAK"
++
++#: src/interface.c:653
++msgid "Create this configuration"
++msgstr "Utwórz tê konfiguracjê"
++
++#: src/interface.c:687
++msgid "Brand:"
++msgstr "Producent:"
++
++#: src/interface.c:696
++msgid "Model:"
++msgstr "Model:"
++
++#: src/interface.c:727
++msgid "Select your keyboard"
++msgstr "Wybór klawiatury"
++
++#: src/interface.c:736
++msgid "Set device options"
++msgstr "Opcje urz±dzeñ"
++
++#: src/support.c:455
++#, c-format
++msgid "Couldn't find pixmap file: %s"
++msgstr "Nie mo¿na znale¼æ pliku pixmapy: %s"
++
++#: src/support.c:462
++#, c-format
++msgid "Error loading pixmap file: %s"
++msgstr "B³±d podczas odczytu pliku pixmapy: %s"
++
++#: src/support.c:510
++#, c-format
++msgid "Error reloading pixmap file: %s"
++msgstr "B³±d podczas ponownego odczytu pliku pixmapy: %s"
