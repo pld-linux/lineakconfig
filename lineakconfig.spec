@@ -1,3 +1,6 @@
+# TODO: doesn't build, some error in patch(?)
+#	error: "./.././mkinstalldirs: No such file or directory"
+#	needed some patch(?)
 Summary:	GUI for lineakd daemon configuration
 Summary(pl):	Graficzny interfejs do konfiguracji demona lineakd
 Name:		lineakconfig
