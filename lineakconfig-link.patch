@@ -1,0 +1,21 @@
+--- lineakconfig-0.4.2/src/support.h.orig	2004-04-20 21:15:42.000000000 +0200
++++ lineakconfig-0.4.2/src/support.h	2006-03-10 00:08:57.399660750 +0100
+@@ -42,7 +42,6 @@
+ 
+ #include <X11/Xlib.h>
+ #include <X11/XKBlib.h>
+-#include <X11/extensions/XKBfile.h>
+ 
+ #include "dcfp.h"
+ #include "lineakcommon.h"
+--- lineakconfig-0.4.2/configure.in.orig	2006-03-10 00:00:02.746247000 +0100
++++ lineakconfig-0.4.2/configure.in	2006-03-11 01:10:39.366681750 +0100
+@@ -28,7 +28,7 @@
+ then
+     AC_MSG_ERROR("You must have X installed")
+ else
+-    X_LIBS="$X_LIBS -lX11 -lXmu"
++    X_LIBS="$X_LIBS -lX11"
+ fi
+ 
+ dnl Checks for header files.
