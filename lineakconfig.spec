@@ -1,19 +1,16 @@
-# TODO: doesn't build, some error in patch(?)
-#	error: "./.././mkinstalldirs: No such file or directory"
-#	needed some patch(?)
 Summary:	GUI for lineakd daemon configuration
 Summary(pl):	Graficzny interfejs do konfiguracji demona lineakd
 Name:		lineakconfig
-Version:	0.3.2
+Version:	0.4.2
 Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/lineak/%{name}-%{version}.tar.gz
-# Source0-md5:	210a6e6eec924c985955f0aa353bbb5e
+# Source0-md5:	f8202b3687c40942029483c21f6c85c0
 Patch0:		%{name}-pl.po.patch
+Patch1:		%{name}-link.patch
 URL:		http://lineak.sourceforge.net/
-BuildRequires:	XFree86-devel
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.59-9
 BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel >= 1.2.0
@@ -29,9 +26,11 @@ nowych klawiaturach.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
+%patch1 -p1
 
 %build
+%{__gettextize}
 %{__aclocal}
 %{__autoconf}
 %{__autoheader}
