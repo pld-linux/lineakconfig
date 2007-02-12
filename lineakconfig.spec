@@ -1,5 +1,5 @@
 Summary:	GUI for lineakd daemon configuration
-Summary(pl):	Graficzny interfejs do konfiguracji demona lineakd
+Summary(pl.UTF-8):   Graficzny interfejs do konfiguracji demona lineakd
 Name:		lineakconfig
 Version:	0.4.2
 Release:	1
@@ -20,8 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 GUI to put actions on the multimedia keys on modern keyboards.
 
-%description -l pl
-GUI do przypisywania akcji klawiszom multimedialnym wystêpuj±cym na
+%description -l pl.UTF-8
+GUI do przypisywania akcji klawiszom multimedialnym wystÄ™pujÄ…cym na
 nowych klawiaturach.
 
 %prep
