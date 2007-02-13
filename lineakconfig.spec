@@ -1,5 +1,5 @@
 Summary:	GUI for lineakd daemon configuration
-Summary(pl.UTF-8):   Graficzny interfejs do konfiguracji demona lineakd
+Summary(pl.UTF-8):	Graficzny interfejs do konfiguracji demona lineakd
 Name:		lineakconfig
 Version:	0.4.2
 Release:	1
