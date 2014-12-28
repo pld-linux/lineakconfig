@@ -12,7 +12,7 @@ Patch1:		%{name}-link.patch
 URL:		http://lineak.sourceforge.net/
 BuildRequires:	autoconf >= 2.59-9
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+-devel >= 1.2.0
 Requires:	lineakd
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
